@@ -7,3 +7,8 @@ body, html {
 table, th, td {
   border:1px solid black;
 }
+
+table tr:hover {
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
