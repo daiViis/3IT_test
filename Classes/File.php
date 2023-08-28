@@ -49,7 +49,7 @@
                 echo "<th>".$heading[$i]."</th>";
             }
             
-            echo "</tr><tr>";
+            echo '</tr><tr class="not_active" id="tr_table_data_0" onclick="highlighted_change(this);">';
             
             $count = 1;
             if ($this->result != null) {
@@ -59,7 +59,7 @@
                     
                     if ($count == $this->getItemsPerLine()) {
                         $count = 0;
-                        echo "</tr><tr>";
+                        echo '</tr><tr class="not_active" id="tr_table_data_'.($i + 1).'" onclick="highlighted_change(this);">';
                     }
                     $count++;
                 }

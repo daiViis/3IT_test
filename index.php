@@ -12,6 +12,8 @@
     <title>Čtení souborů</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="Styles/main.css" />
+    
+    <script src="Scripts/scripts.js"></script>
 </head>
 <body>
 
