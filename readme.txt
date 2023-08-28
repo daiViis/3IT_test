@@ -1,0 +1,1 @@
+Zdravím, po odeslání emailu jsem ve volném čase ještě provedl pár malých změn, aby stránka lépe vyhověla zadání úkolu. V součtu tyto změny zabrali zhruba 20 minut. Práce na celém projektu tak trvala zhruba 1 hodinu, bohužel jsem ji kvůli dnešní časové zátěži musel rozložit, za to se omlouvám.
