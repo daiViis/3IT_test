@@ -33,7 +33,7 @@
 
             //výsledek čtení převádím do srozumitelné tabulky
 
-            echo $csv->printFile();
+            echo $csv->printFile(["ID", "Jméno", "Příjmení", "Datum Registrace"]);
 
             echo "<h1>CSV soubor do databáze</h1>";
 
