@@ -19,7 +19,6 @@
         
         public function readFile() {
             $ret = [];
-            $row = 1;
             
             if (($handle = fopen($this->getFileName(), "r")) != false) {
                 
@@ -30,8 +29,6 @@
                     for ($i = 0; $i < $num; $i++) {
                         array_push($ret, $data[$i]);
                     }
-                    
-                $row++;
                     
                 }
                 
@@ -44,9 +41,15 @@
         
         //Výsledek čtení, který musí být uložen ve vlastnosti Result je převeden do čitelnné tabulky
         
-        public function printFile() {
+        public function printFile($heading) {
             
-            echo "<table><tr><th>ID</th><th>Jméno</th><th>Příjmení</th><th>Datum registrace</th></tr><tr>";
+            echo "<table><tr>";
+            
+            for ($i = 0; $i < count($heading); $i++) {
+                echo "<th>".$heading[$i]."</th>";
+            }
+            
+            echo "</tr><tr>";
             
             $count = 1;
             if ($this->result != null) {
